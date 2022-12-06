@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Giá Hoa Quả</p>
+    <button onclick="xemgia()">Xem giá</button>
+    <input type="text" id="123" />
+    <p id="msg"></p>
+    <script>
+        function xemgia() {
+            var loaiqua = document.getElementById('123').value;
+            var gia;
+            switch (loaiqua)  {
+                case "oi":
+                    gia = 20000 
+                    break;
+                case "duahau":
+                    gia = 20000 
+                    break;
+                case "tao":
+                    gia = 30000 
+                    break;
+                case "xoai":
+                    gia = 30000 
+                    break;
+                case "cam": 
+                    gia = 40000
+                    break;
+                case "chomchom": 
+                    gia =  40000 
+                    break;
+                case "mangcut": 
+                    gia = 50000 
+                    break;
+                default: 
+                break;
+
+
+            }
+            document.getElementById('msg').innerHTML = 'Giá là ' + gia + ' VND/kg';
+
+        }
+    </script>
+</body>
+</html>
